@@ -334,10 +334,6 @@ document.write('<tr><td><input type=button onClick=allclr() value=Clear></td><td
 document.write('<tr><td>切手などは<br>最後に追記して送信</td><td colspan=2><textarea cols=30 rows=10 id=outputdata style="ime-mode: active;" ></textarea></td></tr>');
 document.write('<tr><td><input type=text id=name></td><td><input type=password id="pwd"　onclick="javascript:this.type=\'text\'"></td><td><input type=button onClick=sending() value=送信></td></tr>');
 
-document.write('<tr><td colspan=3>Copyright (C) 2006-')
-myD = new Date();
-curYear = myD.getYear();
-
 var cook = GetCookies()
 
 document.getElementById("name").value=typeof cook["name"] !=="undefined" ? cook["name"]:"";
